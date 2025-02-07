@@ -46,7 +46,7 @@ pip install pyrofork tgcrypto
 ## Configuration
 
 1. Open the `config.py` file in your favorite text editor.
-2. Replace the placeholders for `API_ID`, `API_HASH`, `SESSION_STRING`, and `BOT_TOKEN` with your actual values:
+2. Replace the placeholders for `API_ID`, `API_HASH`, `SESSION_STRING`, `ADMIN_IDS`, `DEFAULT_LIMIT`, `ADMIN_LIMIT` and `BOT_TOKEN` with your actual values:
    - **`API_ID`**: Your API ID from [my.telegram.org](https://my.telegram.org).
    - **`API_HASH`**: Your API Hash from [my.telegram.org](https://my.telegram.org).
    - **`SESSION_STRING`**: The session string generated using [@SmartUtilBot](https://t.me/SmartUtilBot).
