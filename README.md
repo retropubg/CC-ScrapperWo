@@ -28,7 +28,7 @@
 Before you begin, ensure you have met the following requirements:
 
 - Python 3.8 or higher.
-- `pyrofork` and `tgcrypto` libraries.
+- `pyrofork` and `tgcrypto` libraries. ✨Note You Can Also Use `pyrogram`
 - A Telegram bot token (you can get one from [@BotFather](https://t.me/BotFather) on Telegram).
 - API ID and Hash: You can get these by creating an application on [my.telegram.org](https://my.telegram.org).
 - To Get `SESSION_STRING` Open [@SmartUtilBot](https://t.me/SmartUtilBot). Bot and use /pyro command and then follow all instructions.
@@ -91,8 +91,9 @@ python scrapper.py
 - If you encounter any issues, check the bot logs for detailed error messages.
 - Keep your API credentials and session string secure to prevent unauthorized access to your bot.
 
-## Author
-
+## Authors
+- Name: Bisnu Ray 
+- Telegram: [@TheSmartBisnu](https://t.me/TheSmartBisnu)
 - Name: Abir Arafat Chawdhury
 - Telegram: [@ModVipRM](https://t.me/ModVipRM)
 
