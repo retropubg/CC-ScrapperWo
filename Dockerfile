@@ -19,7 +19,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Instalar dependencias dentro del entorno virtual
 RUN /opt/venv/bin/pip install --upgrade pip && /opt/venv/bin/pip install --no-cache-dir -r /app/requirements.txt
 RUN /opt/venv/bin/pip install --no-cache-dir pyrogram tgcrypto
-RUN /opt/venv/bin/pip list
+
 # Verificar instalación de paquetes
 RUN /opt/venv/bin/pip list
 
