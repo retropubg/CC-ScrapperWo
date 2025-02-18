@@ -16,14 +16,14 @@ RUN apt-get update && apt-get install -y \
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Actualizar pip e instalar dependencias
-RUN pip install --upgrade pip && pip install --no-cache-dir -r /app/requirements.txt
+# Instalar dependencias dentro del entorno virtual
+RUN /opt/venv/bin/pip install --upgrade pip && /opt/venv/bin/pip install --no-cache-dir -r /app/requirements.txt
+
+# Verificar instalación de paquetes
+RUN /opt/venv/bin/pip list
 
 # Copiar los archivos del proyecto al contenedor
 COPY . /app/
 
-# Verificar paquetes instalados
-RUN pip list
-
 # Definir el comando de inicio del contenedor
-CMD ["python", "scr.py"]
+CMD ["/opt/venv/bin/python", "scr.py"]
